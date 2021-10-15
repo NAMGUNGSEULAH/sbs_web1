@@ -64,11 +64,17 @@
 	 		
 	 
 	  -->
+
+	  <!--
+		  textarea
+          : 장문 텍스트를 입력받는 태그
+
+	  -->
 	 
 	 <!-- TODO 여기에 작성해보세요. -->
 	 <form action="input.jsp" method="get">
 	    <input type="text" name="input1">
-	    <input type="text" name="input2">
+	    <input type="password" name="input2">
 	    <input type="submit" value="전송">
 	</form>
 	 
@@ -89,7 +95,43 @@
 					      <label for="female">여자</label>
 					      <input type="radio" name="gender"value="female" id="female"> 
 
-	 </form>
+						  <br>
+
+		checkbox(취미): 
+		                  <label for="exercise">운동</label>
+						  <input type="checkbox" name="hobby" value="exercise" id="exercise">
+
+						  <label for="movie">영화감상</label>
+						  <input type="checkbox" name="hobby" value="movie" id="movie">
+
+						  <label for="exercise">독서</label>
+						  <input type="checkbox" name="hobby" value="book" id="book">
+							
+					      <br>
+
+		date         :    <input type="date" name="date"> <br>
+		month        :    <input type="month" name="month"> <br>
+		time         :    <input type="time" name="time"> <br>
+		date-time    :    <input type="datetime=local" name="datetime=local"> <br>
+
+		number       :    <input type="number" name="number" min="1" max="100" step="5"> <br>
+		range        :    <input type="range" name="range" min="1" max="100" step="10"> <br>
+		file         :    <input type="file" name="file"> <br>
+	 
+		<hr>
+	   textarea      :
+	   <textarea name="content" id="content" cols="30" rows="10"></textarea>
+
+	   <br>
+	   <input type="reset" value="다시작성">
+	   <input type="submit" value="제출">
+	   <button type="button" onclick="alert('버튼 클릭')"></button>목록</button>
+
+	   <!-- 인용부호 허용 예시1: " ' ' " -->
+	   <!-- 인용부호 허용 예시2: ' " " ' -->
+
+
+	</form>
 	 
 	 
 </body>
