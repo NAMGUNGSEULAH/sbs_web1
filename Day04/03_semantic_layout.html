@@ -6,6 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃 - 시맨틱 태그</title>
     <style>
+        * { box-sizing: border-box;}
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        /* 헤더 */
+        header {background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+                }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            height: 300px;
+            background-color: #f1f1f1;
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;  
+            /* 앞의 요소에서 사용한 float 영향을 없앰 */
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
 
     </style>
 </head>
@@ -17,9 +70,9 @@
     <section>
         <nav>
             <ul>
-                <li><a href="#"></a>공지사항</li>
-                <li><a href="#"></a>게시판</li>
-                <li><a href="#"></a>자료실</li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">자료실</a></li>
             </ul>
         </nav>
 
